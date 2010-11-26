@@ -1,0 +1,49 @@
+<?php return <<<CSS
+
+#messages .form-bar{
+    text-align:right;
+    padding:5px;
+}
+#messages ul{
+	list-style: none;
+	padding:5px 30px 5px 30px;
+}
+#messages li{
+    border: 1px solid #777;
+    border-style: solid solid none solid;
+}
+#messages li.last{
+    border: 1px solid #777;
+}
+#messages .message .subject{
+    font-size: 0.9em;
+    font-weight: bold;
+    background: #EEE;
+    padding-left: 10px;
+}
+#messages .message .header{
+    font-family: sans-serif;
+    font-size: 0.8em;
+    background: #EEE;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    padding-top: 0px;
+}
+#messages .message select{
+    font-size: 0.8em;
+}
+#messages .message .toggler{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: #600;
+}
+#messages .message div.mesg{
+    padding: 5px 0px 5px 10px;
+   
+    border: 1px dashed #777;
+    border-style: dashed none none none;
+    font-size: 0.9em;
+    color: #444;
+}
+CSS;
+?>

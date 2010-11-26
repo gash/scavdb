@@ -1,0 +1,18 @@
+<?php
+return <<<HTML
+<div class='item' id='item-{$id}'>
+	<form action='/item.php?id={$item_id}' method='POST'>
+		<label class='item_id'>item: <input type='text' size='4' name='item_id' value='{$id}'/></label>
+		<label class='page'>page: <input type='text' size='2' name='page' value='{$page}'></label>
+		<p><textarea name='description' rows='6' cols='80' id='desc-{$id}'>{$description}</textarea></p>
+		<span class='help'>Description goes here, exactly as on the list.</span>
+		<label class='max'>[<input type='text' name='max_pt' size='3' value='{$max_pt}'> points (max. plausible)]</label> Due: {$due}
+		<div class='comment'>Status: {$statuses}<span class="help">Always keep the status of items up-to-date so people know where to help</span></div>
+		<div class='tags'>Delete tags: {$tags}<span class="help">Check the tags you want to delete</span></div>
+		<div class='comment'>Promote users: {$users}<span class="help">Promote users to Owner and they can edit the item's status, tags, and other data themselves</span></div>
+		<div class='tags'>Delete files: {$files}<span class="help">Check the files you want to delete</span></div>
+		<input type="hidden" name="sig" value="{$sig}" /><input type='submit' name='save' value='Save' /></span>
+	</form>
+</div>
+HTML;
+?>

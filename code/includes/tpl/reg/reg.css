@@ -1,0 +1,53 @@
+<?php return <<<CSS
+
+#reg{
+    font-family: sans-serif;
+    margin:20px;
+}
+
+#reg .left-col{
+    float:left;
+    width:50%;
+}
+
+#reg .right-col{
+    float:right;
+    width:50%;
+}
+
+#reg .bottom{
+    clear: both;
+    display: block;
+    width: 100%;
+    text-align:right;
+}
+
+#reg .bottom .altaction{
+    display: block;
+    font-size: 0.8em;
+    padding-top: 5px;
+}
+
+#reg .row{
+    padding-bottom: 20px;
+}
+
+#reg label{
+    font-size: 0.9em;
+}
+
+#reg .help{
+    font-family: serif;
+    display: block;
+    width: 75%;
+    font-size: 0.8em;
+    color: #777;
+    padding-top: 5px;
+}
+
+#reg .footer{
+    color: #777;
+    font-size:0.8em;
+}
+CSS;
+?>

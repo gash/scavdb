@@ -1,0 +1,252 @@
+body {
+	background: #EEE;
+	margin: 0px;
+}
+
+body,textarea{
+	font-family: Verdana, sans-serif;	
+}
+
+textarea,input {
+	font-size: 90%;
+}
+
+h1,h2,h3,h4,h5 {
+/*	font-family: georgia, sans-serif;*/
+	margin: 0;
+}
+
+a {
+	color: #6af;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+img {
+	border: 0;
+}
+
+.tag {
+	font-size: 90%;
+}
+
+div.tags {
+	margin: 1ex;
+}
+
+a.plain {
+	color: black;
+	text-decoration: none;
+}
+
+p {
+	font-size: 0.9em;
+	margin: 0;
+}
+
+label {
+	font-size: 0.9em;
+}
+
+label.status {
+	margin-right: 1em;
+}
+
+.hidden {
+	display: none;
+}
+
+.help {
+    display: block;
+    width: 75%;
+    font-size: 0.8em;
+    color: #888;
+    padding-top: 5px;
+}
+
+div.container {
+	/* border: 1px solid #e0eeff; */
+	border: 1px solid #bcf;
+/*	margin: 1ex; */
+	background: #FFF;
+}
+
+form {
+	margin: 0;
+}
+
+div.container > h3 {
+	/* background: #e0eeff; */
+	background: #bcf;
+	color: black;
+	padding-left: 5px;
+	/* border: 1px solid white; */
+	text-align: center;
+}
+
+ul.itemlist {
+	list-style: none;
+}
+
+.item {
+	clear: both;
+	padding-left: 20px;
+}
+.item-nav{
+    font-size: 0.9em;
+    padding-bottom: 10px;
+    text-align: center;
+}
+.item .description{
+	font-family: Georgia, serif;
+    font-size:1.2em;
+}
+
+li.comment{
+    padding-bottom: 20px;
+}
+li.item {
+	margin-left: -20px;
+	padding-bottom: 10px;
+}
+
+div.item {
+	margin: 1ex;
+}
+
+.item > div.description {
+}
+
+.item > div.points {
+	color: grey;
+	font-size: 90%;
+}
+	
+div.errors {
+	background: #FDD;
+	border: 1px solid red;
+	margin: 1ex;
+}
+
+h4 {
+	background: no-repeat 2px 2px #e0eeff;
+	padding-left: 25px;
+}
+
+h4.comments {
+	background-image: url(img/comments.png);
+}
+
+h4.add-comment {
+	background-image: url(img/comment_add.png);
+}
+
+div.comment {
+	border: 1px solid #EEE;
+	border-width: 1px 0;
+	margin: 1ex;
+}
+
+.comment.broadcast {
+	background: url(img/broadcast.png) no-repeat top left;
+	padding-left: 20px;
+}
+
+.comment.normal {
+	background: url(img/comment.png) no-repeat top left;
+	padding-left: 20px;
+}
+
+.nickname {
+	font-weight: bold;
+}
+
+.name {
+	color: #888;
+	font-size: 90%;
+}
+
+table.statuses {
+	width: 100%;
+}
+
+#statuses .content{
+	padding: 1em;
+}
+
+#status-update {
+	font-size: 120%;
+	width: 90%;
+}
+
+.status-A { background: url(img/status-A.png) no-repeat 0px 2px; }
+.status-I { background: url(img/status-I.png) no-repeat 0px 2px; }
+.status-r { background: url(img/status-r.png) no-repeat 0px 2px; }
+.status-x { background: url(img/status-x.png) no-repeat 0px 2px; }
+.status-n { background: url(img/status-n.png) no-repeat 0px 2px; }
+.status-P { background: url(img/status-P.png) no-repeat 0px 2px; }
+.status-s { background: url(img/status-s.png) no-repeat 0px 2px; }
+.status-Z { background: url(img/status-Z.png) no-repeat 0px 2px; }
+
+#header{
+    background-color: #333;
+    padding-left:20px;
+}
+#header h1 a{
+    color: #F95;
+}
+#header h1{
+    float:left;
+}
+#header .sbox{
+    float:right;
+    padding:10px;
+}
+#header .nav{
+    clear:both;
+    display:block;
+    padding-left:0px;
+    padding-bottom: 5px;
+	margin-bottom: 0;
+}
+#header .nav li{
+    display:inline;
+    padding-right: 2em;
+}
+
+#footer {
+	font-size:80%;
+	padding: 1ex;
+	background: #333;
+	color: white;
+}
+
+.small {
+	font-size: 70%;
+}
+
+.comments .info {
+	font-size: 80%;
+	background: #f7f7f7;
+	padding: 1px;
+	margin-bottom: -10px;
+	margin-left: 8px;
+}
+
+p.info {
+	padding: 1em;
+	width: 50em;
+}
+
+ul.tag-glossary {
+	list-style-type: none;
+	font-size: 70%;
+}
+
+table.listinfo td {
+	text-align: right;
+	padding: 2px 5px;
+}

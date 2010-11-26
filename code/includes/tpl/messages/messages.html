@@ -1,0 +1,24 @@
+<?php return <<<MARKUP
+
+<div id="messages">
+<form method="POST" action="/messages.php">
+
+<div class="form-bar">
+<input type="hidden" name="sig" value="{$sig}" >
+<a href="/send.php">Send Message</a>
+<input type="submit" name="r" value="Refresh">
+<input type="submit" name="s" value="Save Changes">
+</div>
+
+<ul class="messages" id="msg-list">
+{$messages}
+</ul>
+
+<div class="form-bar">
+<a href="/send.php">Send Message</a>
+<input type="submit" name="r" value="Refresh">
+<input type="submit" name="s" value="Save Changes">
+</div>
+</form>
+</div>
+MARKUP;

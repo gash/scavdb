@@ -1,0 +1,15 @@
+<?php return <<<MARKUP
+
+<li class="items">
+<span class="ith">
+<span class="status-{$status}">&nbsp;&nbsp;&nbsp;&nbsp;</span>
+<a href="/item.php?id={$item_id}" >Item {$item_id}</a>
+</span>
+<span class="page">(<a href="/page.php?id={$page}">Page {$page}</a>)</span>
+<span class="rel">{$_rel}</span>
+<span class="description">{$description}</span>
+<span class="help">[{$max_pt} points] {$tags}</span>
+</li>
+
+MARKUP;
+?>

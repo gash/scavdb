@@ -1,0 +1,31 @@
+<?php return <<<HTML
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" version="-//W3C//DTD XHTML 1.1//EN" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>{$TITLE}</title>
+	<link rel="stylesheet" href="/global.css" />
+	<link rel="search" type="application/opensearchdescription+xml" title="Fuckin' Yeah Search" href="/opensearch.xml">
+	<style type='text/css'>
+{$CSS}
+	</style>
+</head>
+<body>
+{$HEADER}
+<div class='container'>
+	{$ERRORS}
+	<h3>{$TITLE}</h3>
+	{$BODY}
+</div>
+<div id='footer'>
+Problems? Contact <a href="/people.php?id=1">Yitz</a>.
+</div>
+<script>
+{$JS}
+</script>
+</body>
+</html>
+HTML;
+?>

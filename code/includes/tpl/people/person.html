@@ -1,0 +1,23 @@
+<?php
+return <<<HTML
+<div class='comment'>
+<h3>{$name} (aka {$nickname})</h3>
+<span class='help'><img src='/img/phone.png' /> {$cell} <a href='/send.php?recipients[]={$person_id}'><img src='/img/msg.png' /> {$email}</a></span>
+<p>Status: {$status}</p>
+<p>Skillz: {$skillz}</p>
+<p>Items: {$items}</p>
+<p class="help">I am this person, and I want to <a href="/reg.php?id={$person_id}">edit my profile</a>! (requires signature)</p>
+<p class="help">Help! I am this person, and I <a href="/people.php?id={$person_id}&forgot=1">forgot my signature</a>! (sends the signature in an email)</p>
+</div>
+{$tags}
+<h4 class='add-comment'>add a comment</h4>
+<div class='new comment'>
+	<form method='POST'>
+		<textarea name='comment' cols='80' rows='6'></textarea><span class='help'>Offer your call for help/insightful comments/wisecracks in the face of impending doom here.</span>
+		<label>Sig: <input type='password' name='sig' /></label>
+		<input type='submit' value='Do It!' />
+	</form>
+</div>
+{$comments}
+HTML;
+?>

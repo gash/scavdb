@@ -1,0 +1,69 @@
+<?php return <<<MARKUP
+
+<div style="border: 2px solid red; background: #faa; padding: 10px; margin: 10px;">
+<h3>This is (probably) not the scavdb you're looking for.</h3>
+<p>The actual GASH scavdb has moved to <a style="color: red; font-weight: bold; text-decoration: underline;" href="http://db.scavhunt.net">db.scavhunt.net</a>.  It's shorter, which means less typing for you
+and less bytes for the ISP to transfer.  It's a win-win!</p>
+<p>This server exists as a testing/backup server only.</p>
+</div>
+
+<div id="regcta">
+<!--<h4>Registration</h4>
+<div class="content">
+<p>If you haven't yet, register your account <a href="/reg.php">here</a>.</p>
+</div>-->
+
+<h4>Update your status</h4>
+<div class="content">
+<form action="/status.php" method="POST" class="status">
+<label for="status-update">What are you up to right now?<br />
+  <input type="text" id="status-update" name="status" size="128" /></label><br />
+<label for="status-sig">Sig: <input type="password" size="10" id="status-sig" name="sig" /></label>
+<input type="submit" value="Update" />
+</form>
+</div>
+	
+<h4>Do Things!</h4>
+<div class="content">
+<form method="GET" action="page.php">
+<label><img src='/img/status-n.png'> Go to page <input type="text" name="id" size="3"></label>
+<input type="submit" name="s" value="Go">
+</form>
+
+<form method="GET" action="item.php">
+<label><img src='/img/status-Z.png'> Go to item <input type="text" name="id" size="3"></label>
+<input type="submit" name="s" value="Go">
+</form>
+
+<form method="GET" action="search.php">
+<label><img src='/img/search.png'> Search: <input type="text" name="q" size="30"></label>
+<input type="submit" name="s" value="Find">
+<a href="search.php">Learn more</a>
+</form>
+
+<form method="POST" action="people.php">
+<label><img src='/img/user.png'> Go to my profile - Sig: <input type="password" name="sig" size="10"></label>
+<input type="submit" name="lookup" value="Go">
+</form>
+
+<form method="POST" action="messages.php">
+<label><img src='/img/msg.png'> Go to my messages - Sig: <input type="password" name="sig" size="10"></label>
+<input type="submit" name="s" value="Go">
+</form>
+
+{$additem}
+
+</div>
+
+<h4>Status Summary</h4>
+<div class="content">
+<table class="statuses">
+<tr class="small"><td>Status</td><td>Items</td><td>Points</td><td>Description</td></tr>
+{$statuses}
+</table>
+</div>
+
+</div>
+
+MARKUP;
+?>

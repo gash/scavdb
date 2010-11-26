@@ -1,0 +1,14 @@
+<?php
+return <<<HTML
+<form method='POST' style='margin-top:5px'>
+	<span>Tags: {$tags}</span>
+    <label class='add-tags'><img src='/img/tag_add.png' /> <input type='text' name='add_tags[]' /></label> or
+   		<select name='add_tags[]'>
+			<option value="">select a special tag</option>
+			{$specialtags}
+		</select>
+		<input type='submit' value='add' />
+	<span class='help'>Enter tags like <em>{$random1}</em> or <em>{$random2}</em> or <em>{$random3}</em> - no spaces or punctuation. <a href="/tags.php">More about tags &raquo;</a></span>
+</form>
+HTML;
+?>

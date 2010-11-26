@@ -1,0 +1,25 @@
+<?php return <<<MARKUP
+
+<div id="statuses">
+
+<h4>Update your status</h4>
+<div class="content">
+<form action="/status.php" method="POST" class="status">
+<label for="status-update">What are you up to right now?<br />
+  <input type="text" id="status-update" name="status" size="128" value="{$status}"/></label><br />
+<label for="status-sig">Sig: <input type="password" size="10" id="status-sig" name="sig" /></label>
+<input type="submit" value="Update" />
+</form>
+</div>
+
+<h4>Recent status updates</h4>
+<div class="content">
+<ul class="itemlist">
+{$statuses}
+</ul>
+</div>
+
+</div>
+
+MARKUP;
+?>

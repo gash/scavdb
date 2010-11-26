@@ -1,0 +1,15 @@
+<?php return <<<MARKUP
+
+<li class="comments">
+<span class="ctitle">
+<a href="/search.php?q={$datatype}%20{$data_id}">Comment on {$datatype} {$data_id}</a>
+<span class="rel">{$_rel}</span>
+</span>
+<span class="comment">{$comment}</span>
+<span class="footer">
+from <a href="person.php?id={$person_id}">{$nickname}</a> at {$time}
+</span>
+</li>
+
+MARKUP;
+?>

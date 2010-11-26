@@ -1,0 +1,8 @@
+<?php return <<<CSS
+
+.no-sig div{
+    padding: 20px;
+}
+
+CSS;
+?>

@@ -1,0 +1,11 @@
+<?php
+return <<<HTML
+<li class="comment">
+    <a href='/people.php?id={$person_id}'>{$name} ({$nickname})</a>:
+    <span class="comment">{$text}</span>
+	<div class='help'>
+    <span class="mtime">Posted: {$rtime}</span>
+    </div>
+</li>
+HTML;
+?>

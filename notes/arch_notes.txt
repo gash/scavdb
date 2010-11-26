@@ -1,0 +1,77 @@
+¥ Objects (and their properties)
+	¥ Tags and Comments are universal
+	¥ Items
+		¥ Page (Captain)
+		¥ Participants -> Users
+		¥ Requisitions -> Things
+		¥ Annotations
+		¥ Status (ETA [P4])
+		¥ Missions
+		¥ Points
+	¥ Users
+		¥ Skills
+		¥ Messages
+		¥ Items
+		¥ Location
+		¥ Schedule -> Missions
+		¥ Things (possessed or donated) [P3]
+		¥ Contact info
+		¥ Icon [P3]
+	¥ Missions
+		¥ Place -> Locations
+		¥ Time
+		¥ Items
+		¥ Priority (triggered by author rank)
+		¥ Participants -> Users
+	¥ Locations
+		¥ Missions
+		¥ Geoloc for IP [P5]
+		¥ People [P3]
+	¥ Things
+		¥ Item(s)
+		¥ User(s)
+		¥ Cost
+		¥ Deadline -> Time
+		¥ Status (have, need, approved)
+	¥ Messages
+		¥ Sender
+		¥ Recipient
+		¥ Text
+		¥ Object (reference)
+		¥ Urgent bit
+
+¥ Pages
+	¥ CIC
+		¥ People sought / Messages awaiting delivery
+		¥ Upcoming events
+		¥ Items by priority/work to be done/time left
+		¥ TTJ
+	¥ Dashboard
+		¥ Messages
+		¥ Items
+		¥ Missions
+		¥ Schedule
+		¥ Requisition statuses
+	¥ List Page
+	¥ Item
+	¥ Messages
+	¥ Requisitions
+	¥ User
+	¥ Fuckin' advanced search - full index at minimum
+	¥ 
+
+¥ Concepts
+	¥ Tags, comments and messaging *everywhere*
+	¥ Mini-CIC
+		¥ Next 3 Missions
+		¥ Time to Judgement
+		¥ People sought
+	¥ Quick access to features from a universal header
+		¥ Messaging
+		¥ Location update
+		¥ Item status
+		¥ Personal mini-dashboard
+		¥ Login for full dashboard
+	¥ RSS [P2]
+
+¥ Brief guide / Best practices

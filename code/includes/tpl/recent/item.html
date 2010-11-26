@@ -1,0 +1,12 @@
+<?php
+return <<<HTML
+<li class='item status-{$status}' id='item-{$item_id}'>
+	<a href='/item.php?id={$item_id}' class='plain'><div class='description'>{$item_id}. {$description} {$points}</div></a>
+	<div class='help'>[{$max_pt} points]
+    <span class="page">[page <a href="page?id={$page}">{$page}</a>]</span>
+    <span class="nc">[{$nc} comments]</span>
+    <span class="mtime">Updated: {$time}</span>
+    </div>
+</li>
+HTML;
+?>

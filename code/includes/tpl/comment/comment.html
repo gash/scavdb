@@ -1,0 +1,9 @@
+<?php
+return <<<HTML
+{$info}
+<div class='comment {$type}' id='comment-{$comment_id}'>
+	<p>{$comment}</p>
+	<span class='help'><a href='/people.php?id={$person_id}'>{$name}</a> {$time}</span>
+</div>
+HTML;
+?>

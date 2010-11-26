@@ -1,0 +1,14 @@
+<?php return <<<CSS
+#recent .form-wrapper{
+    padding: 15px;
+    text-align: center;
+}
+#recent li .mtime{
+    clear: none;
+    display: inline;
+    font-family: sans-serif;
+    color: #F96;
+}
+
+CSS;
+?>

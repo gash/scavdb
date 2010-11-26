@@ -1,0 +1,33 @@
+<?php return <<<MARKUP
+
+<div id="sendmsg">
+<form method="POST" action="/send.php">
+<div class="left">
+<label>Select recipient(s)</label>
+<select name="recipients[]" size="5" multiple>
+{$ropts}
+</select>
+</div>
+<div class="blurb">
+<em>Sending to everybody?</em> Use the new "broadcast" feature instead!  To send a broadcast, go to the item page, and post a comment with the "Broadcast" check box checked.  Broadcasts are shown in the Mailbox, and the Recent page, and get sent via email, but won't be sent to everybody's mailboxes on the site.  They also link directly to the item in question, so please <strong>only</strong> use this to send a message to everyone if it is a) urgent and b) doesn't pertain to any item in particular.  (For example: "Meeting for everyone immediately" or "I'm going to Home Depot, anyone else need something" or "The Green Room is on fire".  <strong>NOT</strong> "I need X for item N.")<br/>
+<input type="checkbox" name="spam" value="1"> No thanks, I really want to spam everybody's mailbox.
+</div>
+
+<label>Subject</label>
+<input type="text" name="subject" value="{$subject}" size="50" />
+
+<label>Message</label>
+<textarea name="message" rows="10" cols="50">{$message}</textarea>
+
+<label>
+<input type="checkbox" name="flag" value="u"> Urgent!
+</label>
+
+<label>Sig: <input type="password" name="sig" value="" size="8">
+<input type="submit" name="send" value="Send">
+
+</form>
+</div>
+
+MARKUP;
+?>

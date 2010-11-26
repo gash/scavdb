@@ -1,0 +1,8 @@
+<?php
+return <<<HTML
+<div class='comment' id='person-{$person_id}'>
+<a href='/people.php?id={$person_id}'>{$name} (aka {$nickname})</a> Skillz: {$skillz}
+<span class='help'><img src='/img/phone.png' /> {$cell} <a href='/send.php?recipients[]={$person_id}'><img src='/img/msg.png' /> {$email}</a> {$tags}</span>
+</div>
+HTML;
+?>

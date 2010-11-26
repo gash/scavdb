@@ -1,0 +1,8 @@
+<?php return <<<CSS
+
+#regcta .content{
+    padding: 20px;
+}
+
+CSS;
+?>

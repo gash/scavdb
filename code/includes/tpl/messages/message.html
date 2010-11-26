@@ -1,0 +1,23 @@
+<?php return <<<MARKUP
+
+<li class="message status{$tag} {$last}" id="message-{$mesg_id}">
+
+<div class="subject">{$title}</div>
+<div class="header">
+<span class="from">From <a href="/people.php?id={$person_id}">{$nickname}</a></span>
+<span class="time">at {$time}</span>
+<a href="javascript:msgToggle({$mesg_id});" class="toggler" id="msg-tog-{$mesg_id}" >{$toggle}</a>
+<span class="mark">mark as 
+<input type="hidden" name="prevflags[{$mesg_id}]" value="{$tag}" >
+<select name="flags[{$mesg_id}]">
+{$flags}
+</select>
+</span>
+</div>
+<div class="mesg" id="msg-body-{$mesg_id}" style="display:{$disp}">
+{$message}
+</div>
+</li>
+
+MARKUP;
+?>

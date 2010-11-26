@@ -1,0 +1,21 @@
+<?php return <<<MARKUP
+
+<div id="recent">
+<form method="GET" action="/recent.php">
+<div class="form-wrapper">
+Show:
+<label><input type="radio" name="mode" value="i" {$isel} > Items
+</label>
+(on page <input type="text" name="page" size="3" value="{$page}">)
+<label><input type="radio" name="mode" value="c" {$csel} > Comments</label>
+<label><input type="radio" name="mode" value="b" {$bsel} > Broadcasts</label>
+<input type="submit" name="submit" value="Show">
+</div>
+</form>
+
+{$results}
+
+</div>
+
+MARKUP;
+?>

@@ -1,0 +1,8 @@
+<?php
+return <<<HTML
+<li class='item status-{$status}' id='item-{$item_id}'>
+	<a href='/item.php?id={$item_id}' class='plain'><div class='description'>{$item_id}. {$description} {$points}</div></a>
+	<div class='help'>[{$max_pt} points] [{$nc} comments] {$tag} Due:{$due} <div class="hidden">{$add_tags}</div></div>
+</li>
+HTML;
+?>

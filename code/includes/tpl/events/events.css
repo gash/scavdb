@@ -1,0 +1,17 @@
+<?php return <<<CSS
+
+#events{
+    padding: 20px;
+}
+
+
+#events .form-wrapper{
+    font-family: sans-serif;
+    font-size: 0.9em;
+    color: #777;
+    padding-bottom: 20px;
+}
+
+
+CSS;
+?>

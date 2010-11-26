@@ -1,0 +1,71 @@
+
+
+directory structure:
+
+components/layout_2col/html:
+<html>
+<head>
+<title>{$TITLE}</title>
+{$CSS}
+<body>
+<div class="head">{$HEAD_COMPONENT}</div>
+<div class="col1">{$COL1_COMPONENT}</div>
+<div class="col2">{$COL2_COMPONENT}</div>
+{$SCRIPT}
+</body>
+</html>
+
+
+{
+_section: '',
+_component: 'mini_cic',
+TIME: '20060512......',
+}
+
+home.php:
+
+$data = get_home_data($_REQUEST);
+echo build_home_markup($data);
+
+
+
+components/home/data:
+function get_home_data($request){
+    $data = array();
+    $data['MINI_CIC'] = get_mini_cic_data($request);
+    $data['MESSAGES'] = get_messages_data($request);
+    return $data;
+}
+
+components/home/json:
+function build_home_json($data){
+    return struct2json($data);
+}
+
+
+components/home/html:
+function build_home_html($data){
+  $tplVars = array();
+  $tplVars['TITLE'] = 'Home!  Lar!';
+  $tplVars['HEAD_COMPONENT'] = $data['MINI_CIC'];
+  $tplVars['COL1_COMPONENT'] = $data['MESSAGES'];
+  $tplVars['CSS'] = get_mini_cic_css();
+  $tplVars['CSS'].= get_other_css();
+  ...
+  $cMkp = build_layout_2col_html($tplVars);
+}
+
+
+mini_cic.php:
+function build_mini_cic_data($request_params){
+  global $CSS, $SCRIPT;
+  
+  ...
+  
+  $CSS.= <<<CSS
+#yada...
+CSS;
+}
+
+function get_component_html($sect,$vars){    get_markup('component',$sect,$vars);}function get_markup($component,$sect,$vars){    if (is_array($vars)) extract($vars);    return include(PREFIX.$component.$sect);}// template include file: 
+<?php return <<<HTML<html>{$VAR}</html>HTML; ?>

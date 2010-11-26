@@ -1,0 +1,73 @@
+<?php return <<<CSS
+
+#search{
+    font-family: sans-serif;
+}
+
+#search .form{
+    text-align: center;
+    padding: 20px 0px 20px 20px;
+}
+#search .header{
+    text-align: center;
+}
+#search li{
+    padding-bottom: 10px;
+}
+#search .people .person{
+    display: block;
+}
+#search .people .meta{
+    font-family: serif;
+    font-size: 0.85em;
+    color: #000;
+}
+#search .people label{
+    font-family: sans-serif;
+    color: #777;
+}
+#search .people .skillz{
+    display:block;
+}
+#search .items .status{ width:20px}
+#search .items .page{
+    font-size:0.9em;
+}
+#search .items .description{
+    display:block;
+    padding-top: 5px;
+    font-family: serif;
+}
+#search .items .points{
+    display:block;
+    color:#777;
+    font-size: 0.85em;
+}
+#search .comment{
+    display:block;
+    font-family:serif;
+}
+#search .footer{
+    font-size: 0.85em;
+    color: #777;
+}
+#search .tips{
+    padding:20px;
+}
+#search .tips dl{
+    padding-left:20px;
+}
+#search .tips dt{
+    font-family:monospace;
+}
+#search .tips dd{
+    font-family: serif;
+    font-size: 0.9em;
+    padding-bottom:10px;
+}
+#search .rel{
+    font-size: 0.8em;
+    color: #777;
+}
+CSS;
+?>

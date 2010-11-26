@@ -1,0 +1,9 @@
+<?php
+return <<<HTML
+<div>
+<a href='/people.php?id={$person_id}'><img src='/img/captain.png' />{$nickname}</a>
+<label><input name='role[{$person_id}]' type='radio' value='' checked="checked" /> Owner</label>
+<label><input name='role[{$person_id}]' type='radio' value=' ' /> Not</label>
+</div>
+HTML;
+?>

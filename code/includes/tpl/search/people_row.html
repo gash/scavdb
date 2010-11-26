@@ -1,0 +1,15 @@
+<?php return <<<MARKUP
+
+<li class="people">
+<span class="person">
+<a href="/people.php?id={$person_id}">{$name} (a.k.a {$nickname})</a>
+<span class="rel">{$_rel}</span>
+</span>
+<span class="meta cell"><label>Cell: </label>{$cell}</span>
+<span class="meta email"><label>E-mail: </label>{$email}</span>
+<span class="meta skillz"><label>Skillz: </label>{$skillz}</span>
+<span class="help"{$tags}</span>
+</li>
+
+MARKUP;
+?>

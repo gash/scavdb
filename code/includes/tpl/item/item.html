@@ -1,0 +1,63 @@
+<?php
+return <<<HTML
+<div class='item-nav'>
+<a href="item.php?id={$prev_id}" class="prev">{$prev_label}</a>
+<a href="item.php?id={$next_id}" class="next">{$next_label}</a>
+</div>
+<div class='item status-{$status}' id='item-{$item_id}'>
+	<div class='description'>{$item_id}. {$description}</div>
+	<div class='help'>[{$max_pt} points] [<a href='/page.php?id={$page}'>page {$page}</a>] Due {$due} {$tags}</div>
+</div>
+
+<h4 class='add-comment'>change status (currently: {$statuslabel})</h4>
+<div class='new comment'>
+	<form method='POST'>
+	        {$update_status}
+		<br /><label>Sig: <input type='password' name='sig' autocomplete="off" /></label>
+		<input type='submit' value='Do It!' />
+	</form>
+</div>
+
+{$comments}
+
+<h4 class='add-comment'>add a comment</h4>
+<div class='new comment'>
+	<form method='POST'>
+		<span class='help'>Offer your call for help/insightful comments/wisecracks in the face of impending doom here.</span>
+		<textarea name='comment' cols='80' rows='6'></textarea>
+<!--
+		<span class="help">Update the status of the item (optional)</span>
+	        {$update_status}
+		<span class="help">Broadcast a comment when you want it to go out to everyone, provide a short subject for the email</span>
+//-->
+		<br /><label><input type='checkbox' name='ctype' value='b'> Broadcast (email) comment to <b>everybody</b>.  Email subject: </label><input type='text' name='btitle' autocomplete="off" />
+		<br /><label><input type='checkbox' name='sub' value='true' checked="checked"> Subscribe
+		<span style="font-size:0.85em;color:#aaa;">Subscribe to get notifications when others comment on this item</span></label>
+		<br /><label>Sig: <input type='password' name='sig' autocomplete="off" /></label>
+		<input type='submit' value='Do It!' />
+	</form>
+</div>
+
+<h4 class='add-comment'>People</h4>
+<div class='comment'><form method='POST'>
+<img src='/img/captain.png' /> Owners: {$owners}<br />
+<img src='/img/user.png' /> People: {$users} <label><br />Sig: <input type='password' name='sig' /></label> <input type='submit' name='sub' value='Me too!' />
+<span class="help">Enter your sig and hit the button to subscribe to this item</span>
+</form></div>
+
+<h4 class='add-comment'>Files</h4>
+<div class='tags'>
+{$files}
+<form enctype="multipart/form-data" method='POST'>
+	<input type="hidden" name="MAX_FILE_SIZE" value="100000000" />
+    <img src='/img/attach.png' /> Attach a file: <input name="file" type="file" />
+    <input type="submit" value="Upload" />
+</form></div>
+
+<h4>Edit Item</h4>
+<div class='comment'><form method='POST'>
+<label><img src='/img/edit.png' /> Sig: <input type='password' name='sig' /></label> <input type='hidden' name='edit' value='1'><input type='submit' value='Edit' />
+<span class="help">Edit item description or points</span>
+</form></div>
+HTML;
+?>

@@ -1,0 +1,89 @@
+<?php return <<<MARKUP
+
+<div class="inner" id="reg">
+
+<form method="POST" action="">
+<input type="hidden" name="person_id" value="{$person_id}">
+
+<div class="left-col">
+
+<div class="row">
+<label>Name:</label>
+<div class="field">
+<input type="text" name="name" value="{$name}">
+<span class="help">Your full name (e.g. 'Ebeneezer Scrooge')</span>
+</div>
+</div>
+
+
+<div class="row">
+<label>Nickname:</label>
+<div class="field">
+<input type="text" name="nickname" value="{$nickname}">
+<span class="help">Whatever you are most commonly known as (e.g. 'Scrooge' or 'Ebeneezer' or under certain circumstances 'Neez' - please make it recognizable, nobody knows you 'Tha Dawg' is and your nickname is usually what shows up)</span>
+</div>
+</div>
+
+<div class="row">
+<label>Sig: </label>
+<div class="field">
+<input type="password" name="sig" value="{$sig}">
+<span class="help">
+A secret 4-10 character "signature".  You'll need this to post comments, see your
+personalized page, and use some of the features.  It's kind of like a password,
+so treat it as such.
+</span>
+</div>
+</div>
+
+</div> <!-- end left-col //-->
+<div class="right-col">
+
+<div class="row">
+<label>E-mail:</label>
+<div class="field">
+<input type="text" name="email" value="{$email}">
+<span class="help">Your mom.  I mean... email address.</span>
+</div>
+</div>
+
+
+<div class="row">
+<label>Cell Phone:</label>
+<div class="field">
+<input type="text" name="cell" value="{$cell}">
+<span class="help">Number for your portable comm device </span>
+</div>
+</div>
+
+<div class="row">
+<label><a href="http://twitter.com">Twitter</a> username:</label>
+<div class="field">
+<input type="text" name="twitter" value="{$twitter}">
+<span class="help">Allows (or will allow) updating your status by tweeting <a href="http://twitter.com/gashscav/">@gashscav</a></span>
+</div>
+</div>
+
+<div class="row">
+<label>Skillz:</label>
+<div class="field">
+<textarea name="skillz" rows="10" cols="35">{$skillz}</textarea>
+<span class="help">Anything and everything that might conceivably and 
+inconceivably be of use during scav. (e.g. Computer hacking skillz, 
+nunchuck skillz, butter eating skillz, etc)</span>
+</div>
+</div>
+
+
+</div><!-- end right-col //-->
+<div class="bottom">
+
+<input type="submit" name="submit" value="{$button}">
+<span class="altaction"><a href="reg.php">{$new}</a></span>
+</div><!-- end bottom //-->
+</form>
+
+</div><!-- end inner //-->
+
+MARKUP;
+?>
